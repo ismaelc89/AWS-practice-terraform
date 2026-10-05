@@ -129,6 +129,7 @@ resource "aws_instance" "public_web" {
 
   tags = {
     Name = "DemoPublicWebInstance"
+    Environment = var.instance_env
   }
 }
 
@@ -143,6 +144,7 @@ resource "aws_instance" "private_web" {
 
   tags = {
     Name = "DemoPrivateWebInstance"
+    Environment = var.instance_env
   }
 }
 
